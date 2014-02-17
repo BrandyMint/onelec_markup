@@ -1,5 +1,10 @@
 $( document ).ready(function() {
 
+
+    if ($(document).height() <= $(window).height()) {
+        $("footer").addClass("navbar-fixed-bottom");
+    }        
+
 	var catlink = $('#catlink');
 	var catalogmenu = $('#catalog-menu');
 
@@ -42,6 +47,17 @@ $( document ).ready(function() {
     	if (scrollContent.length) {    		
     		var h = $(window).height() - 100-100;    		 		    	    
     		scrollContent.css('height', (h<300?'100%':h+'px'));
+            
+            var bodyw = [];
+            $('#scrollContent > tr:first > td').each (function(i, row) {              
+              bodyw.push(this.clientWidth);
+            }); 
+
+            $('.fixedHeader th').each(function(){                
+                $(this).css('width', bodyw[$(this).index()]+'px');
+            });
+            
+
     	}
     }
     

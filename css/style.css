@@ -8,8 +8,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; 
 }*/
-body {
-  font-family: Arial, sans-serif; 
+html, body {
+  font-family: Arial, sans-serif;   
 }
 .mb20 {
 	margin-bottom: 20px;
@@ -22,6 +22,9 @@ body {
 }
 .mt20 {
 	margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
 }
 .mt50 {
   margin-top: 50px;
@@ -283,7 +286,7 @@ footer a {
 }
 
 html>body thead.fixedHeader tr {
-  display: block
+  display: block;
 }
 #scrollContent {
   display: block;
@@ -291,13 +294,12 @@ html>body thead.fixedHeader tr {
   overflow: auto;
   width: 100%
 }
-html>body thead.fixedHeader th, html>body tbody#scrollContent td {  
-  width: 1%;
-  white-space:nowrap;  
+html>body thead.fixedHeader th, html>body tbody#scrollContent td {
+  width: 1%;  
 }
 /***************product*****************/
 .product-image {
-  width: 250px;
+  width: 150px;
   border: 1px dashed #ddd;
   margin: 15px 0 30px 0;
 }
@@ -315,6 +317,9 @@ html>body thead.fixedHeader th, html>body tbody#scrollContent td {
   line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #dddddd;
+}
+.dochead {
+  margin-right: 20px;
 }
 .product-price {
   font-size: 28px;    
